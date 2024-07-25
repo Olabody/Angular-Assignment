@@ -1,0 +1,7 @@
+<h1>{{ title }} by {{ User }}</h1>
+<div *ngFor="let staff of Staff">
+  <p>
+    <span [ngClass]="{ assigned: staff.name }">{{ staff.name }}</span>
+    <span>{{ staff.job }}</span>
+  </p>
+</div>
